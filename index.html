@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Forecast App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Upload Sales and Price Files</h2>
+    <form id="uploadForm">
+        <input type="file" id="salesFile" accept=".xlsx" required>
+        <input type="file" id="priceFile" accept=".xlsx" required>
+        <button type="submit">Upload & Process</button>
+    </form>
+
+    <h3>Processed Data</h3>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>SKU</th>
+                <th>Price</th>
+                <th>Sales Forecast</th>
+                <th>Purchase Order</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <button id="downloadBtn" style="display: none;">Download Processed Excel</button>
+
+    <h3>Sales vs Forecast Chart</h3>
+    <canvas id="salesChart"></canvas>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
