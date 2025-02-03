@@ -20,8 +20,6 @@ This project focuses on **SKU (Stock Keeping Unit) analysis and management**, le
 ## 📊 Tech Stack
 - **Python** (Pandas, NumPy, Matplotlib, Seaborn)
 - **Jupyter Notebook**
-- **SQL** (if used for database queries)
-- **Power BI/Tableau** (if visualizations are involved)
 
 ## 📖 Usage
 1. Clone the repository:
