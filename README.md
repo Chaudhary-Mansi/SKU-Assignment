@@ -38,3 +38,4 @@ This project focuses on **SKU (Stock Keeping Unit) analysis and management**, le
    ```sh
    jupyter notebook
    ```
+![SKU Frontend](https://github.com/user-attachments/assets/98be36f3-da56-49a5-8ad4-f6800b788187)
